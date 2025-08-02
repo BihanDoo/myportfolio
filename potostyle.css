@@ -1,0 +1,110 @@
+body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #111;
+      color: white;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 40px 0 20px;
+      font-size: 2.5em;
+    }
+
+    .portfolio-grid {
+     column-count: 3;
+     column-gap: 15px;
+     padding: 20px;
+     max-width: 1200px;
+    margin: auto;
+    }
+
+
+    .portfolio-item {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+
+    .portfolio-item:hover {
+      transform: scale(1.03);
+    }
+
+    .portfolio-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+    /* Modal Styles */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 10;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.9);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal img {
+      max-width: 90vw;
+      max-height: 90vh;
+      border-radius: 10px;
+    }
+
+    .modal:target {
+      display: flex;
+    }
+
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      color: white;
+      font-size: 30px;
+      text-decoration: none;
+      z-index: 20;
+    }
+
+
+    .post {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
+    @media (max-width: 800px) {
+     .portfolio-grid {
+     column-count: 2;
+    }
+}
+
+    @media (max-width: 500px) {
+     .portfolio-grid {
+       column-count: 1;
+    }
+}
+
+
+    @media (max-width: 600px) {
+      .portfolio-item {
+        height: 180px;
+      }
+    }
