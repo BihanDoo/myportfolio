@@ -12,9 +12,9 @@ body {
     }
 
     .portfolio-grid {
-     column-count: 4;
-     column-gap: 15px;
-     padding: 20px;
+     column-count: 5;
+     column-gap: 3px;
+      padding: 20px; 
      /* max-width: 1200px; */
      max-width: fit-content;
     
@@ -25,9 +25,8 @@ body {
     .portfolio-item {
   display: inline-block;
   width: 100%;
-  margin-bottom: 15px;
-  margin-left: 15px;
-  margin-right: 15px;
+  /* margin-bottom: 15px; */
+  
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
@@ -103,19 +102,44 @@ footer {
 
     @media (max-width: 800px) {
      .portfolio-grid {
-     column-count: 2;
+     column-count: 3;
+     padding: 15px;
+       column-gap: 10px;
     }
+    .portfolio-item {
+      height: fit-content;
+      margin-bottom: 10px;
+    }
+    body {
+        font-size: 12px;
+      }
 }
 
     @media (max-width: 500px) {
      .portfolio-grid {
-       column-count: 1;
+       column-count: 2;
+       padding: 15px;
+       column-gap: 10px;
+       
+
     }
+      .portfolio-item {
+        height: fit-content;
+        margin-bottom: 10px;
+      }
+      body {
+        font-size: 10px;
+      }
+    
 }
 
 
     @media (max-width: 600px) {
       .portfolio-item {
         height: fit-content;
+        margin-bottom: 10px;
+      }
+      body {
+        font-size: 10px;
       }
     }
