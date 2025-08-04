@@ -27,7 +27,7 @@ body {
   width: 100%;
   /* margin-bottom: 15px; */
   
-  border-radius: 10px;
+  border-radius: 4px;
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.3s;
@@ -98,6 +98,17 @@ footer {
     text-align: center;
     padding: 15px 0;
     font-size: 0.9em;
+  }
+
+
+  .card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 1920px;
+    height: 1080px;
   }
 
     @media (max-width: 800px) {
