@@ -33,6 +33,9 @@
   .hero-plainbackground{
     background-color: #b4b99c; /* Fallback color */
   }
+  .hero-darkbackground{
+    background-color: #47852f; /* Fallback color */
+  }
   .hero-content {
     max-width: 500px;
   }
@@ -145,7 +148,7 @@
     margin: 40px 0;
     gap: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
     padding: 20px;
   }
   
