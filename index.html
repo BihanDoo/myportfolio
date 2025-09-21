@@ -4,13 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enter ref code</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            
+        }
+        form {
+            margin-bottom: 20px;
+            
+        }
+        input[type="text"] {
+            padding: 8px;
+            width: 200px;
+            margin-right: 10px;
+        }
+        button {
+            padding: 8px 12px;
+        }
+        b {
+            font-size: 14px;
+        }
+    </style>
     
 </head>
 <body>
     <h2>Enter Reference Code</h2>
     <form action="main.html" method="get">
-        <input type="text" name="refcode" placeholder="Reference Code" required>
+        <input type="text" name="refcode" value="test" placeholder="Reference Code" required>
         <button type="submit">Submit</button>
     </form>
+    <b>Not sure? enter "test" and submit</b>
 </body>
 </html>

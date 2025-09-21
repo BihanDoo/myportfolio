@@ -9,6 +9,15 @@
     .necard{
       box-shadow: 0px 2px 5px rgba(0,0,0,0.4);
     }
+    .hidden {
+      display: none;
+    }
+    .section {
+      padding: 10px;
+      margin: 10px;
+      border: 1px solid #ccc;
+    }
+
   </style>
 </head>
 <body>
@@ -28,17 +37,17 @@
   
       <!-- Project 1 -->
       <div class="projectn">
-        <div class="necard"  onclick="window.location.href='itwrk.html'">
+        <div class="necard" id="itwrk" onclick="window.location.href='itwrk.html'+(getrefcode() ? '?refcode=' + getrefcode() : '')">
           <h3>My IT-Related Work</h3>
           <img src="lupc.png"  alt="couldn't load image, refresh the page" style="border: 0px; box-shadow: none;">
         </div>
 
-        <div class="necard" onclick="window.location.href='photowrk.html'">
+        <div class="necard" id="photowrk" onclick="window.location.href='photowrk.html'+(getrefcode() ? '?refcode=' + getrefcode() : '')">
           <h3>My Photography work</h3>
           <img src="camcam.jpg" alt="couldn't load image, refresh the page" style="border: 0px; box-shadow: none; width: 60%; height: auto; margin: 25px;">
         </div>
 
-        <div class="necard" onclick="window.location.href='others.html'">
+        <div class="necard" id="others" onclick="window.location.href='others.html'+(getrefcode() ? '?refcode=' + getrefcode() : '')">
           <h3>Others</h3>
           <img src="qmark.png" alt="couldn't load image, refresh the page" style="border: 0px; box-shadow: none; width: 60%; height: auto; margin: 25px;">
 
@@ -98,5 +107,22 @@
     </div>
   </footer>
 
+  <script>
+    
+    const urlParams = new URLSearchParams(window.location.search);
+    const refcode = urlParams.get('refcode'); 
+    function getrefcode() {
+      return refcode;
+    }
+    
+    if (refcode === "test") {
+      
+    } else if (refcode === "SECV") {
+      document.getElementById("section3").classList.add("hidden");
+    }
+    
+  </script>
+
+  
 </body>
 </html>
