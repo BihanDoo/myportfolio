@@ -55,7 +55,7 @@
   
       <!-- Project 1 -->
       <div class="project" style="align-items: self-start;">
-        <div class="text" style="">
+        <div class="text" >
           <h3>Video Commercial</h3>
           <p>This is a commercial video done for Fourdanz (PVT)LTD </p>
           <p>Everything from Composition, Lighting and Filming was done by me</p>
@@ -127,11 +127,21 @@
     
   </section>
 
-  <!-- Contact Section -->
   <section class="contact">
     <div class="container">
       <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:yourname@example.com">sathmirabihandu@gmail.com</a></p>
+      <p>Email: <a href="mailto:sathmirabihandu@gmail.com">sathmirabihandu@gmail.com</a></p>
+      <button onclick="copyemail()" class="copytoclipboardbutton">Copy to clipboard</button>
+      <script>
+        function copyemail() {
+          const email = "sathmirabihandu@gmail.com";
+            navigator.clipboard.writeText(email).then(() => {
+                alert("Email copied to clipboard!");
+            }).catch(err => {
+                console.error("Failed to copy email: ", err);
+            });
+        }
+      </script>
     </div>
   </section>
 
