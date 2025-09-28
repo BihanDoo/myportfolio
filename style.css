@@ -178,6 +178,13 @@
     flex-direction: row-reverse;
   }
 
+  .somepara{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #555;
+    line-height: 1.6;
+
+  }
 
   /*mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm*/
     .projectn {
@@ -336,6 +343,62 @@
       box-shadow: 0 0 20px rgba(255,255,255,0.3);
     }
 
+    .copytoclipboardbutton{
+      border-radius: 8px; 
+      background-color:cadetblue; 
+      padding: 5px; 
+      color: white; 
+      margin-top: 5px;
+
+    }
+
+
+        /* Modal Styles */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 10;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.9);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal img {
+      max-width: 90vw;
+      max-height: 90vh;
+      border-radius: 10px;
+    }
+
+    .modal:target {
+      display: flex;
+    }
+
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      color: white;
+      font-size: 30px;
+      text-decoration: none;
+      z-index: 20;
+    }
+
+
+    .post {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
 
 
   /* Responsive Design */

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Editing work</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero hero-plainbackground">
+    <div class="hero-content">
+      <h1>Edits by me</h1>
+      <p class="scroll-hint">Scroll ↓</p>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="portfolio">
+    <div class="container">
+      <!-- <h2>Videography work</h2> -->
+
+
+
+
+<!-- <div class="project" style="align-items: self-start;">
+        <div class="text" style="">
+          <h3>Video Commercial</h3>
+          <p>This is a commercial video done for Fourdanz (PVT)LTD </p>
+          <p>Everything from Composition, Lighting and Filming was done by me</p>
+          <br>
+          <li>Client: Fourdanz (PVT)LTD </li>
+          <li>Cast: AN Edition (Amila, Nishen)</li>
+          <li>Location: Hacker House - Podcast Studio</li>
+          <li>My role: Videographer</li>
+          <li>Year: 2025</li>
+          <li> <a href="https://web.facebook.com/watch/?v=1753250101912220" target="_blank">Watch on Facebook</a></li>
+
+
+        </div>
+        <div class="media" >
+
+          <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fweb.facebook.com%2Ffourdanz%2Fvideos%2F1753250101912220%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none; max-height: none; overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true" ></iframe>
+        </div>
+</div> -->
+
+
+
+
+
+
+
+      
+  
+      <!-- Project 1 -->
+      <div class="project" style="align-items: self-start;">
+        <div class="text" style="">
+          <h3 style="font-size: 1.5rem;"><b style="font-size: 2rem;">නාදගම</b> Vlog</h3>
+            <p>Travel vlog done for <b>SharaDh</b> YouTube channel</p>
+          <p style="font-size: 0.8rem;">Used retention-based editing technique</p>
+          
+          <br>
+          <li>Client: <b>SharaDh</b> </li>
+          
+          <li>No.of Editing Hours: <b>6</b> </li> 
+          <li>Duration: <b>8.15 min</b></li>
+          <li>Type: <b>Facebook Reel</b></li>
+          <li>Delivered within: <b>1 Week</b></li>
+          <li class="somepara">Views: <b>335,000 (335K)</b> - one of the first to reach 300K within 3 days
+          <p style="font-size: 0.8rem; color: brown;">As of date: 2025.9.28</p>
+
+          <li> <a href="https://web.facebook.com/share/v/1BZk3sceM8/" target="_blank">Watch on Facebook</a></li>
+
+
+        </div>
+        <div class="media" >
+        <img src="editinggg/Screenshot_20250928_114527_Facebook.jpg" alt="" onclick="openVideo('https://web.facebook.com/share/v/1BZk3sceM8/')" style="cursor: pointer; max-width: 100%; height: auto;">
+           
+        <img src="editinggg/ndgm.png" alt="" id="project-img" style="max-width: 100%; height: auto;" onclick="openModal('editinggg/ndgm.png')">
+
+        </div>
+
+        </div>
+
+
+
+        <!-- Project 2 -->
+      <div class="project" id="meem" style="align-items: self-start;">
+        <div class="text" style="">
+          <h3 style="font-size: 1.5rem;">Podcast Episode 1</h3>
+            <p>Youtube Podcast done for <b>SharaDh</b> YouTube channel</p>
+          
+          
+          <br>
+          <li>Client: <b>SharaDh</b> </li>
+          
+          <li>No.of Editing Hours: <b>4</b> </li>
+          <li>Duration: <b>8.15 min</b></li>
+          <li>Type: <b>Youtube Podcast</b></li>
+          <li>Delivered within: <b>1 Week</b></li>
+          <li>Views: <b>127,000 (127K)</b> </li>
+          <p style="font-size: 0.8rem; color: brown;">As of date: 2025.9.28</p>
+          <li> <a href="https://www.youtube.com/watch?v=vNpUP8hq_zg" target="_blank">Watch on YouTube</a></li>
+
+
+        </div>
+        <div class="media" >
+        <iframe width="600" height="300" src="https://www.youtube.com/embed/vNpUP8hq_zg?si=fxDOZf7SSu_qQFh-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+        <!-- <img src="editinggg/ndgm.png" alt="" id="project-img" style="max-width: 100%; height: auto;" onclick="openModal('editinggg/ndgm.png')"> -->
+
+        </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Modal Structure -->
+<div id="modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:1000;">
+  <span onclick="closeModal()" style="position:absolute; top:20px; right:40px; font-size:2rem; color:white; cursor:pointer;">&times;</span>
+  <img id="modal-img" src="" alt="Modal Image" style="max-width:90vw; max-height:90vh; box-shadow:0 0 20px #000;">
+</div>
+
+<script>
+    
+    function openVideo(url) {
+        window.open(url, '_blank');
+    }
+    function openModal(src) {
+        document.getElementById('modal-img').src = src;
+        document.getElementById('modal').style.display = 'flex';
+    }
+    function closeModal() {
+        document.getElementById('modal').style.display = 'none';
+        document.getElementById('modal-img').src = '';
+    }
+</script>
+
+        
+
+<!--  
+        <div class="media">
+          <iframe src="https://www.youtube.com/embed/samplevideo1" frameborder="0" allowfullscreen></iframe>
+        </div>
+-->
+
+      
+  
+      <!-- Project 2 (Reversed) -->
+       <!--  
+      <div class="project">
+        <div class="media">
+          <iframe src="https://www.youtube.com/embed/samplevideo2" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="text">
+          <h3>titl</h3>
+          <p>desc.</p>
+        </div>
+      </div>
+  -->
+      
+    </div>
+
+    
+    <div class="container">
+      <h2>About my work</h2>
+    <div class="project" style="align-items: self-start;">
+        <div class="text">
+          <h3 class="somepara">Softwares I use:</h3>
+          
+          <li>Premiere pro</li>
+          <li>After Effects</li>
+          <li>Photoshop</li>
+<br>
+          <p style="font-size: 1rem;" class="somepara"> <b> ---My work includes---</b></p>
+          <p style="font-size: 0.9rem;"><b style="color: brown;">Retention-based </b>Social media content including</p>
+          <li>Video Editing</li>
+          <p>Shorts, Reels, Long-Form Content including Podcasts</p>
+          <li>Photo Editing</li>
+          <li>Social Media Posts Design with Graphics</li>
+          <li>Videography</li>
+          <p style="font-size: 0.9rem; color: brown;"> <b>Others </b></p>
+          <li>Music Production (Yes I do)</li>
+          <li>Photography</li>
+
+
+        </div>
+        <div class="media">
+          <!-- <iframe width="280" height="157.5" src="https://www.youtube.com/embed/J14IXq3oIbw?si=PdfqzfiuxaEzDvDo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+        </div>
+
+
+
+      </div>
+
+    </div>
+  </section>
+  <section>
+    
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:sathmirabihandu@gmail.com">sathmirabihandu@gmail.com</a></p>
+      <button onclick="copyemail()" class="copytoclipboardbutton">Copy to clipboard</button>
+      <script>
+        function copyemail() {
+          const email = "sathmirabihandu@gmail.com";
+            navigator.clipboard.writeText(email).then(() => {
+                alert("Email copied to clipboard!");
+            }).catch(err => {
+                console.error("Failed to copy email: ", err);
+            });
+        }
+      </script>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Bihandu Sathmira. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
