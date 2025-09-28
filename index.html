@@ -7,13 +7,23 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            margin: 0;
             background-color: #f4f4f4;
-            
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card {
+            background: #fff;
+            padding: 32px 24px;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+            text-align: center;
+            min-width: 320px;
         }
         form {
             margin-bottom: 20px;
-            
         }
         input[type="text"] {
             padding: 8px;
@@ -27,14 +37,60 @@
             font-size: 14px;
         }
     </style>
-    
 </head>
 <body>
-    <h2>Enter Reference Code</h2>
-    <form action="main.html" method="get">
-        <input type="text" name="refcode" value="test" placeholder="Reference Code" required>
-        <button type="submit">Submit</button>
-    </form>
-    <b>Not sure? enter "test" and submit</b>
+    <div class="card">
+        <h2>Enter Reference Code</h2>
+        <form action="main.html" method="get">
+            <input type="text" name="refcode" value="test" placeholder="Reference Code" required>
+            <button type="submit">Go</button>
+        </form>
+        <b>Not sure? Type "test"</b>
+    </div>
+
+    <script>
+        // Auto-focus the input field on page load
+        document.querySelector('input[name="refcode"]').focus();
+
+        // Allow form submission on Enter key press
+        document.querySelector('input[name="refcode"]').addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                event.preventDefault();
+                this.form.submit();
+            }
+        });
+
+        //get the refcode from URL if exists and set it as input value
+        const urlParams = new URLSearchParams(window.location.search);
+        const refcode = urlParams.get('refcode');
+        if(refcode) {
+            
+            // Hide the form
+            document.querySelector('.card form').style.display = 'none';
+
+            // Show loading screen
+            const loadingDiv = document.createElement('div');
+            loadingDiv.innerHTML = '<h3>Loading...</h3>';
+            loadingDiv.style.marginTop = '20px';
+            document.querySelector('.card').appendChild(loadingDiv);
+
+            // Redirect to main.html with refcode after 3 seconds
+            setTimeout(function() {
+                window.location.href = `main.html?refcode=${encodeURIComponent(refcode)}`;
+            }, 3000);
+
+
+            
+
+            document.querySelector('input[name="refcode"]').value = refcode;
+            //auto-submit the form
+            document.querySelector('input[name="refcode"]').form.submit();
+        }else {
+            
+            document.querySelector('input[name="refcode"]').value = 'test';
+
+        }
+
+    </script>
 </body>
 </html>

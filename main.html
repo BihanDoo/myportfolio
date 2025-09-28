@@ -120,8 +120,24 @@
     
     if (refcode === "test") {
       
-    } else if (refcode === "SECV") {
+    } else if (refcode === "secv") {
+
+
+      
       document.getElementById("section3").classList.add("hidden");
+    }else if(refcode=="edits"){
+      
+      const projectn = document.querySelector('.projectn');
+      const cards = Array.from(projectn.children);
+      const editwrkCard = cards.find(card => card.querySelector('h3')?.textContent === 'Editing Work');
+      if (editwrkCard) {
+        projectn.insertBefore(editwrkCard, projectn.firstChild);
+      }
+      const photowrkCard = cards.find(card => card.querySelector('h3')?.textContent === 'My Photography work');
+      if (photowrkCard) {
+        projectn.insertBefore(photowrkCard, projectn.children[1]);
+      }
+
     }
     
   </script>
