@@ -9,5 +9,6 @@
 
 # *.vsix
 
-codedump.html
+# codedump.html
 testcodedump.py
+testcodedump2.py
