@@ -2,54 +2,96 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IT Project Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style2.css">
+
+  <style>
+          table {
+            border-collapse: collapse;
+            width: 100%;
+          }
+          td {
+            border: 1px solid #3c90ff33;
+            
+            padding: 8px;
+            text-align: center;
+            border-radius: 12px;
+          }
+          tr:nth-child(even){background-color: #f2f2f200;}
+          tr:hover {background-color: #dddddd0b;}
+        </style>
 </head>
 <body>
 
-  <!-- Hero Section -->
-  <section class="hero hero-darkbackground" >
-    <div class="hero-content">
-      <h1>My Portfolio</h1>
-      <p class="scroll-hint" style="font-weight: 1000; font-size: 2.5em; animation: bounce 1.5s infinite;">Scroll ↓</p>
-    </div>
-  </section>
-
-  <!-- Portfolio Section -->
-  <section class="portfolio">
-
-
-<div class="container">
-      <h2>Web based projects</h2>
-
-
-
-       <div class="project" style="padding-top: 0px; padding-bottom: 0px; flex-wrap: nowrap; display:block;">
-        <div class="project" style="box-shadow: none; margin-top: 10px; margin-bottom: 10px;">
-        <div class="text">
-
-          
-          <h3> Hardware-deals <span style="background-color: #5bff3b; color: white; padding: 5px 10px; margin: 5px; border-radius: 5px;">Full Stack</span></h3>
-
-
-          <p>A full-stack website project, made for hardware dealers and buyers, showing the latest deals and products.</p>
-          <p></p>
-          <li>Languages used: HTML, PHP, MySQL, CSS, JavaScript</li>
-          <li>Created: 2025</li>
-
-          <div style="border: 2px solid #e91b1b; background-color: #ffd5d5; border-radius: 10px; padding: 10px;">
-            <strong>Want to see the website in action? visit <a href="https://hardware-deals.ct.ws/">https://hardware-deals.ct.ws/</a></strong>
-          </div>
-
-          
-          <li>Source code: <a href="https://github.com/BihanDoo/Hardware-Deals">Github</a></li>
-          <br>
-        </div>
-        <div>
+  <header class="hero">
+  <div class="hero-inner">
+    <h1>Bihandu Sathmira</h1>
+    <p class="subtitle">Developer · Builder · Experimenter</p>
+    <span class="scroll" >Scroll ↓</span>
+  </div>
+</header>
+<!-- 
+  <section>
+    <h2>Some of My "Best" Work</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Automated Backup System</h3>
+        <p>A Windows-based tool that detects removable drives and automatically backs up critical folders.</p>
+        <div class="tags">
+          <span>C#</span><span>.NET</span><span>Windows</span>
         </div>
       </div>
-      <p>Screenshots:</p>
+      <div class="card">
+        <h3>Custom File Manager</h3>
+        <p>Python GUI file manager with media previews, batch renaming, and smart navigation.</p>
+        <div class="tags">
+          <span>Python</span><span>CustomTkinter</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Self-Hosted Server</h3>
+        <p>Low-budget Windows server hosting a Minecraft server and private file cloud.</p>
+        <div class="tags">
+          <span>Windows</span><span>Networking</span><span>Servers</span>
+        </div>
+      </div>
+    </div>
+  </section>
+ -->
+
+
+  <section>
+    <h2>Web based projects</h2>
+
+
+    <div class="projects">
+      <div class="card">
+        <h3>Hardware-deals <span style=" color: white; padding: 5px 10px; margin: 5px; border-radius: 5px;  border: 1px solid; border-style: dashed;">Full Stack</span> </h3>
+        <p>A full-stack website project, made for sellers to sell hardware items, like Ebay. 
+            <br>It lets buyers to order/rent items from the sellers</p>
+        <div style="border: 2px solid #e91b1b; border-radius: 10px; padding: 10px;">
+            <strong>Want to see the website in action? visit <a href="https://hardware-deals.ct.ws/" style="color: rgb(47, 255, 10);">https://hardware-deals.ct.ws/</a></strong>
+          </div>
+        <div class="tags" style=" margin-top: 10px; display: flex; justify-content: left; align-items: center;">
+            
+          <!-- <span>HTML</span><span>PHP</span><span>MySQL</span><span>CSS</span><span>JavaScript</span> -->
+            
+            
+            <img src="progrmicons/HTML2.png" class="smallicons" style="width: 6%; height: 3rem;" alt="">
+            <img src="progrmicons/php-logo.png" class="smallicons" style="width: 6%; height: 3rem;" alt="">
+            <img src="progrmicons/mysql-logo.png" class="smallicons" style="width: 6%; height: 3rem;" alt="">
+            <img src="progrmicons/JavaScript-Logo.png" class="smallicons" style="width: 6%; height: 3rem;" alt="">
+            
+            <img src="progrmicons/CSS-LOGO.png" class="smallicons" style="width: 6%; height: 3rem;" alt="">
+
+        </div>
+        Source code: <a href="https://github.com/BihanDoo/Hardware-Deals" style="color: rgb(47, 255, 10);">https://github.com/BihanDoo/Hardware-Deals</a>
+
+       
+
+        <p>Screenshots:</p>
       <div class="screenshot-gallery">
         <img src="hardwaredeals/1.png" alt="Screenshot 1" onclick="showModal(this.src)">
         <img src="hardwaredeals/2.png" alt="Screenshot 2" onclick="showModal(this.src)">
@@ -59,151 +101,114 @@
 
 
       </div>
-      <div id="modal" class="modal" onclick="hideModal()">
-        <img id="modal-img" src="">
+        
+
       </div>
-      </div>
-
-
-
-
-        <div class="project" style="padding-top: 0px; padding-bottom: 0px; flex-wrap: nowrap; display:block;">
-        <div class="project" style="box-shadow: none; margin-top: 10px; margin-bottom: 10px;">
-        <div class="text">
-          <h3>My portfolio page</h3>
-          <p>The website you are watching right now, custom designed by myself</p>
-          <p>Isn't it cool to have a portfolio page?</p>
-          <p>Created with help of AI (but it's not vibe-coded, to be honest)</p>
-          <li>Language used: HTML and CSS</li>
-          <li>Created: 2025</li>
-          
-          <li>Source code: <a href="https://github.com/BihanDoo/myportfolio">Github</a></li>
-          <br>
-        </div>
-        <div>
-        </div>
-      </div>
-      <p>Screenshots:</p>
-      <div class="screenshot-gallery">
-        <img src="portpg/1.png" alt="Screenshot 1" onclick="showModal(this.src)">
-      </div>
-      <div id="modal" class="modal" onclick="hideModal()">
-        <img id="modal-img" src="">
-      </div>
-      </div>
-
-
-
-
-
-
-
-
-
-
-
     </div>
 
 
+    
+  </section>
 
 
 
 
+  <section>
+
+    <h2>Android Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Website Load Tester Application</h3>
 
 
+       
+        <div style="display: flex; align-items: center;">
 
-
-    <div class="container">
-      <h2>Android Apps</h2>
-  
-
-      <div class="project" style="padding-top: 0px; padding-bottom: 0px; flex-wrap: nowrap; display:block;">
-        <div class="project" style="box-shadow: none; margin-top: 10px; margin-bottom: 10px;">
+            <p>This app is equipped with 25 browsers, designed to drive traffic to any website. <br>
+        It can test a website's server strength under a load of 25 people at once, by loading the same webpage to 25 browser elements. <br>
+        Development for this app is ended and not complete since my play console was ruined by a scammer, the app is no longer available in Google Play Store. <br>
+        However, you can still download the last published APK build from <a href="https://apkpure.com/25-boom-browser-main/com.bihandu.apps.arcade.and.entertainment.boom25browser" class="aaa">APKPure</a></p>
+            <div class="media">
+                
+          <img src="boomicon.webp" alt="" height="100" width="100" style="border-radius: 12px;">
+        </div>
+        </div>
         
-        <div class="text">
-          <h3>Website Load Tester Application</h3>
-          <p>This app is equipped with 25 browsers,</p>
-          <p>Designed to drive traffic to any website.</p>
-          <p>It can test a website's server strength under a load of 25 people at once, by loading the same webpage to 25 browser elements</p>
-          <p>Development for this app is ended and not complete since my play console was ruined by a scammer, the app is no longer available in Google Play Store.</p>
-          <p>However, you can still download the last published APK build from <a href="https://apkpure.com/25-boom-browser-main/com.bihandu.apps.arcade.and.entertainment.boom25browser">APKPure</a></p>
-          <li>Language used: Java</li>
+    <ul><strong>Details:</strong></ul>
+         <li>Language used: Java</li>
           <li>Started: 2019</li>
           <li>Ended: 2022</li>
           <li>Platform: Android</li>
-          <li>Android version: 5 to 8 (up to 30)</li>
-          <li>Download: <a href="https://apkpure.com/25-boom-browser-main/com.bihandu.apps.arcade.and.entertainment.boom25browser">APKPure</a></li>
-          <br>
-          
-        </div>
-        
-        <div class="media">
-          <img src="boomicon.webp" alt="" height="100" width="100">
-        </div>
-        <div>
-          
-        </div>
-        
+          <li>Android version: 5 to 8 (v30)</li>
+          <li>Download: <a href="https://apkpure.com/25-boom-browser-main/com.bihandu.apps.arcade.and.entertainment.boom25browser" class="aaa">APKPure</a></li>
+         
 
-      </div>
-      <p>Screenshots:</p>
+        <div class="tags" style=" margin-top: 10px; display: flex; justify-content: left; align-items: center;">
+          
+          <img src="progrmicons/java-logo.png" class="smallicons" style="width: 6%; height: 3rem;" alt="">
+
+          
+            <img src="progrmicons/android.svg" class="smallicons" style="width: 6%; height: 3rem;" alt="">
+
+        </div>
+        <p>Screenshots:</p>
       <div class="screenshot-gallery">
         <img src="boomsc/screen-0.webp" alt="Screenshot 2" onclick="showModal(this.src)">
         <img src="boomsc/screen-1.webp" alt="Screenshot 1" onclick="showModal(this.src)">
       </div>
-
-
-      <div id="modal" class="modal" onclick="hideModal()">
-        <img id="modal-img" src="">
-      </div>
-      
-      </div>
-      <!-- Project 1 -->
-      
-      
-  <!-- yt video for porttt -->
-      <!-- Project 2 (Reversed) 
-      <div class="project">
-        <div class="media">
-          <iframe src="https://www.youtube.com/embed/samplevideo2" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="text">
-          
-        </div>
-      </div>
--->
-<!-- pdf cr -->
-      <div class="project" style="padding-top: 0px; padding-bottom: 0px; flex-wrap: nowrap; display:block;">
-        <div class="project" style="box-shadow: none; margin-top: 10px; margin-bottom: 10px;">
         
-        <div class="text">
-          <h3>PDF Creator</h3>
-          <p>This app creates PDF files without watermarks. </p>
-          <p>It can convert images to PDF, and it can also create PDF files from text.</p>
-          <p></p>
-          <p>The app is only supported from android 5, up to Android 8. Development for this app is no longer continued since my play console was ruined by a scammer, the app is no longer available in Google Play Store.</p>
-          <p>However, you can still download the last published APK build from <a href="https://apkpure.com/pdf-creator-boom/com.tech.bihandu.pdf.creator">APKPure</a></p>
-          <li>Language used: Java</li>
+        
+      </div>
+    </div>
+    
+  </section>
+
+
+
+
+  <section>
+     
+    <div class="projects">
+      <div class="card">
+        <h3>PDF Creator</h3>
+
+
+       
+        <div style="display: flex; align-items: center;">
+
+            <p>This app creates PDF files without watermarks. <br>
+
+It can convert images to PDF, and it can also create whole PDF files from text. <br>
+
+The app is only supported by android versions from 5, up to Android 8. Development for this app is no longer continued, hence the app is no longer available in Google Play Store. <br>
+
+However, you can still download the last published APK build from  <a href="https://apkpure.com/pdf-creator-boom/com.tech.bihandu.pdf.creator" class="aaa">APKPure</a></p>
+            <div class="media">
+                
+          <img src="pdfcr/icon.webp" alt="" height="100" width="100" style="border-radius: 12px;">
+        </div>
+        </div>
+        
+    <ul><strong>Details:</strong></ul>
+         <li>Language used: Java</li>
           <li>Started: 2019</li>
           <li>Ended: 2022</li>
           <li>Platform: Android</li>
-          <li>Download: <a href="https://apkpure.com/pdf-creator-boom/com.tech.bihandu.pdf.creator">APKPure</a></li>
-          <br>
+          <li>Android version: 5 to 8 (v30)</li>
+          <li>Download: <a href="https://apkpure.com/pdf-creator-boom/com.tech.bihandu.pdf.creator" class="aaa">APKPure</a></li>
+         
+
+        <div class="tags" style=" margin-top: 10px; display: flex; justify-content: left; align-items: center;">
           
+          <img src="progrmicons/java-logo.png" class="smallicons" style="width: 6%; height: 3rem;" alt="">
+
+          
+            <img src="progrmicons/android.svg" class="smallicons" style="width: 6%; height: 3rem;" alt="">
 
         </div>
-        
-        <div class="media">
-          <img src="pdfcr/icon.webp" alt="" height="100" width="100">
-        </div>
-        <div>
-          
-        </div>
-        
-
-      </div>
-  <p>Screenshots:</p>
+        <p>Screenshots:</p>
       <div class="screenshot-gallery">
+        
         <img src="pdfcr/screen-0.webp" alt="Screenshot 1" onclick="showModal(this.src)">
         <img src="pdfcr/screen-1.webp" alt="Screenshot 2" onclick="showModal(this.src)">
         <img src="pdfcr/screen-2.webp" alt="Screenshot 3" onclick="showModal(this.src)">
@@ -213,192 +218,361 @@
         <img src="pdfcr/screen-6.webp" alt="Screenshot 7" onclick="showModal(this.src)">
         <img src="pdfcr/screen-7.webp" alt="Screenshot 8" onclick="showModal(this.src)">
       </div>
-
-
-      <div id="modal" class="modal" onclick="hideModal()">
-        <img id="modal-img" src="">
-      </div>
-      
-      </div>
-
-
-      <div class="project" style="padding-top: 0px; padding-bottom: 0px; flex-wrap: nowrap; display:block;">
-        <div class="project" style="box-shadow: none; margin-top: 10px; margin-bottom: 10px;">
         
-        <div class="text">
-          <h3>HTML IDE for Android</h3>
-          <p>This app is a simple, lightweight HTML IDE for Android, which can be used to write HTML code and run it in a webview.</p>
-          
-          <p>it has all the basic tools to code and run HTML.</p>
-          
-          <p>Development for this app is no longer continued since my play console was ruined by a scammer, the app is no longer available in Google Play Store.</p>
-          <p>However, you can still download the last published APK build from <a href="https://apkpure.com/html-coding/com.Bihandu.Appstudio.html.coding">APKPure</a></p>
-          <li>Language used: Java</li>
+        
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+   <section>
+     
+    <div class="projects">
+      <div class="card">
+        <h3>HTML IDE for Android</h3>
+
+
+       
+        <div style="display: flex; align-items: center;">
+
+            <p>This app is a simple, lightweight HTML IDE for Android, which can be used to write HTML code and run it in a webview. 
+
+it has all the basic tools to code and run HTML. 
+
+Development for this app is no longer continued, hence the app is no longer available in Google Play Store. <br>
+
+However, you can still download the last published APK build from <a href="https://apkpure.com/html-coding/com.Bihandu.Appstudio.html.coding" class="aaa">APKPure</a></p>
+            <div class="media">
+                
+          <img src="htmlcod/icon.webp" alt="" height="100" width="100" style="border-radius: 12px;">
+        </div>
+        </div>
+        
+    <ul><strong>Details:</strong></ul>
+         <li>Language used: Java</li>
           <li>Started: 2019</li>
           <li>Ended: 2022</li>
           <li>Platform: Android</li>
-          <li>Download: <a href="https://apkpure.com/html-coding/com.Bihandu.Appstudio.html.coding">APKPure</a></li>
-          <br>
+          <li>Android version: 5 to 8 (v30)</li>
+          <li>Download: <a href="https://apkpure.com/html-coding/com.Bihandu.Appstudio.html.coding" class="aaa">APKPure</a></li>
+         
+
+        <div class="tags" style=" margin-top: 10px; display: flex; justify-content: left; align-items: center;">
           
+          <img src="progrmicons/java-logo.png" class="smallicons" style="width: 6%; height: 3rem;" alt="">
+
+          
+            <img src="progrmicons/android.svg" class="smallicons" style="width: 6%; height: 3rem;" alt="">
 
         </div>
-        
-        <div class="media">
-          <img src="htmlcod/icon.webp" alt="" height="100" width="100">
-        </div>
-        <div>
-          
-        </div>
-        
-
-      </div>
-  <p>Screenshots:</p>
+        <p>Screenshots:</p>
       <div class="screenshot-gallery">
+        
         <img src="htmlcod/screen-0.webp" alt="Screenshot 1" onclick="showModal(this.src)">
         <img src="htmlcod/screen-1.webp" alt="Screenshot 2" onclick="showModal(this.src)">
+      </div>
+        
         
       </div>
-
-
-      <div id="modal" class="modal" onclick="hideModal()">
-        <img id="modal-img" src="">
-      </div>
-      
-      </div>
+    </div>
+  </section>
 
 
 
-      <div class="project" style="padding-top: 0px; padding-bottom: 0px; flex-wrap: nowrap; display:block;">
-        <div class="project" style="box-shadow: none; margin-top: 10px; margin-bottom: 10px;">
+
+   <section>
+     
+    <div class="projects">
+      <div class="card">
+        <h3>WhatsApp Status Saver</h3>
+
+
+       
+        <div style="display: flex; align-items: center;">
+
+            <p>Relateable meme on someone's WhatsApp status? wanted to share it? resharing turned off? no replies for "send it to me" and they are acting like celebrities? <br>
+
+<b>No more replies asking for statuses!</b><br>
+This app is a simple, lightweight WhatsApp status saver tool for Android <br>
+
+Development for this app is no longer continued , hence the app is no longer available in Google Play Store. <br>
+
+However, you can still download the last published APK build from <a href="https://apkpure.com/wa-status-saver/com.bihandu.appstudio.whatsstatus.saver" class="aaa">APKPure</a></p>
+            <div class="media">
+                
+          <img src="sts/icon.webp" alt="" height="100" width="100" style="border-radius: 12px;">
+        </div>
+        </div>
         
-        <div class="text">
-          <h3>WhatsApp Status Saver</h3>
-          <p>Relateable meme on someone's WhatsApp status? wanted to share it? but no replies for <i>"send it to me"</i> and they are acting like celebrities?</p>
-          <p><h4>No more replies asking for statuses!</h4></p>
-          <p>This app is a simple, lightweight WhatsApp status saver tool for Android</p>
-         
-          <p>Development for this app is no longer continued since my play console was ruined by a scammer, the app is no longer available in Google Play Store.</p>
-          <p>However, you can still download the last published APK build from <a href="https://apkpure.com/html-coding/com.Bihandu.Appstudio.html.coding">APKPure</a></p>
-          <li>Language used: Java</li>
+    <ul><strong>Details:</strong></ul>
+         <li>Language used: Java</li>
           <li>Started: 2019</li>
           <li>Ended: 2022</li>
           <li>Platform: Android</li>
-          <li>Download: <a href="https://apkpure.com/html-coding/com.Bihandu.Appstudio.html.coding">APKPure</a></li>
-          <br>
+          <li>Android version: 5 to 8 (v30)</li>
+          <li>Download: <a href="https://apkpure.com/wa-status-saver/com.bihandu.appstudio.whatsstatus.saver" class="aaa">APKPure</a></li>
+         
+
+        <div class="tags" style=" margin-top: 10px; display: flex; justify-content: left; align-items: center;">
           
+          <img src="progrmicons/java-logo.png" class="smallicons" style="width: 6%; height: 3rem;" alt="">
+
+          
+            <img src="progrmicons/android.svg" class="smallicons" style="width: 6%; height: 3rem;" alt="">
 
         </div>
-        
-        <div class="media">
-          <img src="sts/icon.webp" alt="" height="100" width="100">
-        </div>
-        <div>
-          
-        </div>
-        
-
-      </div>
-  <p>Screenshots:</p>
+        <p>Screenshots:</p>
       <div class="screenshot-gallery">
+        
         <img src="sts/screen-0.webp" alt="Screenshot 1" onclick="showModal(this.src)">
-
+      </div>
+        
         
       </div>
-
-
-      <div id="modal" class="modal" onclick="hideModal()">
-        <img id="modal-img" src="">
-      </div>
-      
-      </div>
-  
-      
     </div>
-
-
-    <div class="container">
-      <h2>Windows apps</h2>
-        <div class="project" style="padding-top: 0px; padding-bottom: 0px; flex-wrap: nowrap; display:block;">
-        <div class="project" style="box-shadow: none; margin-top: 10px; margin-bottom: 10px;">
-        
-        <div class="text">
-          <h3>Run as Invoker tool</h3>
-          <p>This is a simple tool, which can run .exe files as "not administrator" </p>
-          <p>Think about when you want to open a malware-infected executable file, and it automatically asks to run it as administrator, and you are afraid to click "yes"</p>
-          <p>then this tool can bypass it</p>
-          <p>some applications require you to install the application for all users, which is the reason it asks for the administrator permission</p>
-          <p>Can be used to get away with those annoying "run as administrator" pop up when running exe files. </p>
-          <p>The tool is open source, and the code is simple. User interface is made with CustomTkinter UI</p>
-          <p>You can try the tool on <a href="https://github.com/BihanDoo/RunAsInvokerTool">Github</a> </p>
-          <li>Language used: Python</li>
-          <li>Created: 2025</li>
-          <li>Platform: Windows</li>
-          <li>Download/source code: <a href="https://github.com/BihanDoo/RunAsInvokerTool">Github</a></li>
-          <br>
-          
-
-        </div>
-        
-        <div class="media">
-          <img src="runasinvk/1.png" alt="" height="100" width="100">
-        </div>
-        <div>
-          
-        </div>
-        
-
-      </div>
-      <p>Screenshots:</p>
-      <div class="screenshot-gallery">
-        <img src="runasinvk/2.png" alt="Screenshot 1" onclick="showModal(this.src)">
-        <img src="runasinvk/3.png" alt="Screenshot 2" onclick="showModal(this.src)">
-        
-      </div>
-
-
-      <div id="modal" class="modal" onclick="hideModal()">
-        <img id="modal-img" src="">
-      </div>
-      
-      </div>
-
-    </div>
-
-    
-
-    
-    
   </section>
+
+
+
+
   <section>
+    <h2>Windows Applications</h2>
+
+
+    <div class="projects">
+      <div class="card">
+        
+        <h3>Run as Invoker tool </h3>
+        <div style="display: flex; align-items: center;">
+        <p>A tool to run applications with elevated privileges, bypassing User Account Control (UAC) prompts.
+
+          <br>
+          This is a simple tool, which can run .exe files as "not administrator" <br>
+
+Think about when you want to open a malware-infected executable file, and it automatically asks to run it as administrator, and you are afraid to click "yes" <br>
+
+then this tool can bypass it <br>
+
+some applications require you to install the application for all users, which is the reason it asks for the administrator permission <br>
+
+Can be used to get away with those annoying "run as administrator" pop up when running exe files. <br>
+
+The tool is open source, and the code is simple. User interface is made with CustomTkinter UI <br>
+
+You can try the tool on <a href="https://github.com/BihanDoo/RunAsInvokerTool" style="color: rgb(47, 255, 10);">Github</a>
+        </p>
+        <div class="media">
+                
+          <img src="runasinvk/1.png" alt="" height="100" width="100" style="border-radius: 12px;">
+        </div>
+        </div>
+        
+        <div class="tags" style=" margin-top: 10px; display: flex; justify-content: left; align-items: center;">
+            
+          <!-- <span>HTML</span><span>PHP</span><span>MySQL</span><span>CSS</span><span>JavaScript</span> -->
+            
+            
+            <img src="progrmicons/Python-logo-notext.svg.png" class="smallicons" style="width: 6%; height: 3rem;" alt="">
+            <img src="progrmicons/windows_104558.webp" class="smallicons" style="width: 6%; height: 3rem;" alt="">
+            
+            
+            
+
+        </div>
+        Source code: <a href="https://github.com/BihanDoo/RunAsInvokerTool" style="color: rgb(47, 255, 10);">https://github.com/BihanDoo/RunAsInvokerTool</a>
+
+       
+
+        <p>Screenshots:</p>
+      <div class="screenshot-gallery">
+         <img src="runasinvk/2.png" alt="Screenshot 1" onclick="showModal(this.src)">
+        <img src="runasinvk/3.png" alt="Screenshot 2" onclick="showModal(this.src)">
+
+
+      </div>
+        
+
+      </div>
+    </div>
+
+
     
   </section>
 
-  <section class="contact">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:sathmirabihandu@gmail.com">sathmirabihandu@gmail.com</a></p>
-      <button onclick="copyemail()" class="copytoclipboardbutton">Copy to clipboard</button>
-      <script>
-        function copyemail() {
-          const email = "sathmirabihandu@gmail.com";
-            navigator.clipboard.writeText(email).then(() => {
-                alert("Email copied to clipboard!");
-            }).catch(err => {
-                console.error("Failed to copy email: ", err);
-            });
-        }
-      </script>
-    </div>
+
+
+  <section id="aboutme-hidden">
+    <h2>About Me</h2>
+    <p>About me section isn't available. </p>
+    Enter the refcode <input type="text"> <input type="button" value="Submit" onclick="submitRefCode()">
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Bihandu Sathmira. All rights reserved.</p>
+
+
+
+  <section id="aboutme">
+    <h2>About Me</h2>
+    <div class="about">
+      <div>
+        <h3>Skills</h3>
+        <p>• Software Development
+    <br>• Networking & Servers
+            <br>• Automation Scripts
+        <br>• Backend & Server-side Development</p>
+      </div>
+      <div>
+        <h3 id="#hm">Profile</h3>
+        <p id="non-slop" style="display: none;">Looking for a Server Guy to Handle Backend Tasks? You are Looking at the right person's description. Why? cause he spent all his savings on a 3 Nodes Cluster. and wasted a lot of time and effort on troubleshooting the network</p>
+          <p id="slop">I am an AI-Aware, Server-focused developer passionate about building backend solutions. Not the typical "software engineer". My work sums software engineering with real-world hardware and networking. Not just with the packet tracer, but with actual servers and infrastructure, to squeeze out every bit of performance and reliability out of the system.</p>
+          <p></p>
+           <a href="#hm" class="button" onclick="showhideslop()"><p id="btnslop">Hide slop</p></a> 
+      </div>
     </div>
+
+    <div class="about">
+      <div>
+        <h3>Interests</h3>
+
+        <p>• Obsession with Self-hosted Servers
+        <br>• Building Custom Tools to ease up workflows
+            <br>• Experimenting with new technologies
+            <br> • Obsession of Security & Prevent Vulnerabilities
+        </p>
+        </div>
+
+        <div style="margin-top: 5px; margin-bottom: 5px;">
+      <h3>Skills Rating</h3>
+      <p>Prompt-to-Result Accuracy With AI</p>
+      <progress value="85" max="100"> 85% </progress> 85%
+      <p>Ability to meet Deadlines</p>
+      <progress value="90" max="100"> 90% </progress> 90%
+      <p>English-Conversational skills</p>
+      <progress value="75" max="100"> 75% </progress> 75%
+      <p>English-Listening skills</p>
+      <progress value="85" max="100"> 85% </progress> 85%
+
+      <p></p>
+
+      
+    </div>
+    </div>
+
+
+    <div class="about">
+      <div>
+        <h3>Languages I Use</h3>
+        <ul>
+          
+          <li>Java</li>
+          <li>PHP</li>
+          <li>Kotlin</li>
+          <li>C++</li>
+          <li>C#</li>
+          <li>Python</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>SQL</li>
+        </ul>
+      </div>
+<div>
+        <h3>All the Tools & Technologies I am Familiar With</h3>
+        <!-- round box on every td -->
+        
+         
+        <table>
+          
+          <tr>
+            <td>Git</td>
+            <td>Proxmox</td>
+            <td>VS Code</td>
+          </tr>
+          <tr>
+            <td>Docker</td>
+            <td>NodeJS</td>
+            <td>Cursor</td>
+          </tr>
+          <tr>
+            <td>Ubuntu Server</td>
+            <td>ChatGPT, DeepSeek</td>
+            <td>PHP</td>
+
+          </tr>
+          <tr>
+            <td>Type 1 & Type 2 Hypervisors</td>
+            <td>MongoDB</td>
+            <td>MySQL</td>
+          </tr>
+          <tr>
+            <td>Nginx</td>
+            <td>Kali Linux</td>
+            <td>Windows Server</td>
+          </tr>
+          <tr>
+            <td>Android Studio</td>
+            <td>Qt</td>
+            <td>IntelliJ IDEA</td>
+          </tr>
+          <tr>
+            <td>PyCharm</td>
+          </tr>
+        </table>
+
+</div>
+
+      </div>
+
+      <div class="about2">
+        
+        <div>
+          <h3>What I can do</h3>
+          <table>
+            <tr>
+              <td>Build NodeJS/Python/Backends</td>
+              <td>Develop Automation Scripts</td>
+              
+            </tr>
+            <tr>
+              <td>Full Stack Web Applications - NodeJS+MongoDB+HTML+CSS+JS</td>
+              <td>Custom Tools for Windows</td>
+              
+            </tr>
+            <tr>
+              <td>Set up Server Clusters with Ubuntu-Server/Windows Server</td>
+              <td>Troubleshooting Networks</td>
+              
+            </tr>
+            <tr>
+              <td>Android Full Stack Development - Java/Kotlin + FirebaseDB</td>
+              <td>Windows Full Stack Development - Qt (C++) + MongoDB</td>
+
+            </tr>
+            <tr>
+              <td>Windows Full Stack Development - Java + MongoDB</td>
+              <td>Integrate AI for Fast Results (ChatGPT, DeepSeek, Claude)</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    
+
+    
+  </section>
+
+  <footer>
+    © 2026 Bihandu Sathmira · All rights reserved.
   </footer>
 
-<script>
+  <div id="modal" class="modal" onclick="hideModal()">
+        <img id="modal-img" src="">
+      </div>
+
+
+  <script>
   function showModal(src) {
     const modal = document.getElementById("modal");
     const modalImg = document.getElementById("modal-img");
@@ -409,8 +583,40 @@
   function hideModal() {
     document.getElementById("modal").style.display = "none";
   }
-</script>
 
+
+  function showhideslop() {
+    var slop = document.getElementById("slop");
+    if (slop.style.display === "none") {
+      slop.style.display = "block";
+      document.getElementById("btnslop").innerText = "Hide slop";
+      
+      document.getElementById("non-slop").style.display  = "none";
+      
+    } else {
+      slop.style.display = "none";
+      document.getElementById("btnslop").innerText = "Show slop";
+      
+      document.getElementById("non-slop").style.display  = "block";
+    }
+  }
+  
+  const urlParams = new URLSearchParams(window.location.search);
+  const refcode = urlParams.get("refcode");
+  if (refcode === "secv") {
+    document.getElementById("aboutme").style.display = "block";
+    document.getElementById("aboutme-hidden").style.display = "none";
+  }else{
+    document.getElementById("aboutme").style.display = "none";
+    document.getElementById("aboutme-hidden").style.display = "block";
+  }
+
+  function submitRefCode() {
+   
+    var refcodeInput = document.querySelector("#aboutme-hidden input[type='text']").value
+    window.location.href = window.location.pathname + "?refcode=" + refcodeInput;
+  }
+</script>
 
 </body>
 </html>

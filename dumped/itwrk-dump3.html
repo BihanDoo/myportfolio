@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styledump1.css">
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-inner">
+    <h1>Bihandu Sathmira</h1>
+    <p class="subtitle">Developer · Builder · Experimenter</p>
+    <span class="scroll">Scroll ↓</span>
+  </div>
+</header>
+
+<!-- PORTFOLIO -->
+<main class="portfolio">
+
+  <!-- SECTION -->
+  <section class="section">
+    <h2>Web Projects</h2>
+
+    <article class="card">
+      <div class="card-header">
+        <h3>Hardware Deals</h3>
+        <span class="badge fullstack">Full Stack</span>
+      </div>
+
+      <p class="description">
+        A full-stack platform for hardware dealers and buyers to browse
+        real-time deals and products.
+      </p>
+
+      <ul class="meta">
+        <li>HTML · PHP · MySQL · JS · CSS</li>
+        <li>2025</li>
+      </ul>
+
+      <div class="actions">
+        <a class="btn primary" href="https://hardware-deals.ct.ws/" target="_blank">Live Site</a>
+        <a class="btn ghost" href="https://github.com/BihanDoo/Hardware-Deals" target="_blank">Source</a>
+      </div>
+
+      <div class="gallery">
+        <img src="hardwaredeals/1.png" onclick="showModal(this.src)">
+        <img src="hardwaredeals/2.png" onclick="showModal(this.src)">
+        <img src="hardwaredeals/3.png" onclick="showModal(this.src)">
+        <img src="hardwaredeals/4.png" onclick="showModal(this.src)">
+      </div>
+    </article>
+
+    <article class="card">
+      <h3>Personal Portfolio</h3>
+      <p class="description">
+        This very site. Designed and built from scratch with intentional layout
+        and zero template guilt.
+      </p>
+
+      <ul class="meta">
+        <li>HTML · CSS</li>
+        <li>2025</li>
+      </ul>
+
+      <div class="actions">
+        <a class="btn ghost" href="https://github.com/BihanDoo/myportfolio">Source</a>
+      </div>
+
+      <div class="gallery">
+        <img src="portpg/1.png" onclick="showModal(this.src)">
+      </div>
+    </article>
+  </section>
+
+  <!-- ANDROID -->
+  <section class="section">
+    <h2>Android Apps</h2>
+
+    <article class="card horizontal">
+      <img class="icon" src="boomicon.webp">
+
+      <div>
+        <h3>Website Load Tester</h3>
+        <p class="description">
+          Stress-testing tool using 25 parallel WebViews to simulate real-world traffic.
+        </p>
+
+        <ul class="meta">
+          <li>Java</li>
+          <li>Android 5–30</li>
+          <li>2019–2022</li>
+        </ul>
+
+        <div class="actions">
+          <a class="btn primary" href="https://apkpure.com/25-boom-browser-main/com.bihandu.apps.arcade.and.entertainment.boom25browser">APK</a>
+        </div>
+
+        <div class="gallery">
+          <img src="boomsc/screen-0.webp" onclick="showModal(this.src)">
+          <img src="boomsc/screen-1.webp" onclick="showModal(this.src)">
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- WINDOWS -->
+  <section class="section">
+    <h2>Windows Tools</h2>
+
+    <article class="card horizontal">
+      <img class="icon" src="runasinvk/1.png">
+
+      <div>
+        <h3>Run as Invoker</h3>
+        <p class="description">
+          Launch executables without elevated privileges.
+          Built for safety, simplicity, and curiosity-driven testing.
+        </p>
+
+        <ul class="meta">
+          <li>Python</li>
+          <li>Windows</li>
+          <li>2025</li>
+        </ul>
+
+        <div class="actions">
+          <a class="btn primary" href="https://github.com/BihanDoo/RunAsInvokerTool">GitHub</a>
+        </div>
+      </div>
+    </article>
+  </section>
+
+</main>
+
+<!-- CONTACT -->
+<footer class="contact">
+  <h2>Contact</h2>
+  <a class="email" href="mailto:sathmirabihandu@gmail.com">sathmirabihandu@gmail.com</a>
+</footer>
+
+<!-- MODAL -->
+<div id="modal" class="modal" onclick="hideModal()">
+  <img id="modal-img">
+</div>
+
+</body>
+
+</html>
