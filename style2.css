@@ -66,6 +66,12 @@
       border-radius: 8px;
       font-size: 0.75rem;
       margin: 0.2rem;
+      /* change color when hovering */
+      transition: background 0.3s ease;
+      &:hover {
+        background: #6c70ff;
+        cursor: pointer;
+      }
     }
     .about {
       display: grid;
@@ -79,6 +85,18 @@
       border-radius: 16px;
       margin-top: 10px;
       margin-bottom: 10px;
+    }
+
+
+
+    .btnbtnbtn{
+      display: inline-block;
+      background: #2a2e6a;
+      color: #9ea2ff;
+      padding: 0.3rem 0.6rem;
+      border-radius: 8px;
+      font-size: 0.75rem;
+      margin: 0.2rem;
     }
 
 
