@@ -561,10 +561,10 @@ You can try the tool on <a href="https://github.com/BihanDoo/RunAsInvokerTool" s
       <progress value="85" max="100"> 85% </progress> 85%
       <p>Ability to meet Deadlines</p>
       <progress value="90" max="100"> 90% </progress> 90%
-      <p>English - Idea to Word Ratio</p>
+      <p>English - Conversational Skills</p>
       <progress value="75" max="100"> 75% </progress> 75%
       <p>English - Listening skills</p>
-      <progress value="85" max="100"> 85% </progress> 85%
+      <progress value="95" max="100"> 95% </progress> 95%
 
       <p></p>
 
@@ -677,7 +677,7 @@ You can try the tool on <a href="https://github.com/BihanDoo/RunAsInvokerTool" s
 
 
 
-  <section>
+  <section id="elses">
     <h2>What else?</h2>
     <div class="projects">
       <div class="card" onclick="window.location.href='photowrk.html?refcode=' + refcode" type="Submit">
@@ -757,9 +757,11 @@ You can try the tool on <a href="https://github.com/BihanDoo/RunAsInvokerTool" s
   if (refcode === "secv" || refcode === "isebk") {
     document.getElementById("aboutme").style.display = "block";
     document.getElementById("aboutme-hidden").style.display = "none";
+    document.getElementById("elses").style.display = "block";
   }else{
     document.getElementById("aboutme").style.display = "none";
     document.getElementById("aboutme-hidden").style.display = "block";
+      document.getElementById("elses").style.display = "none";
   }
 
   function submitRefCode() {
