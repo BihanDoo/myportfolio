@@ -392,3 +392,68 @@
     @media (max-width: 768px) {
       .about { grid-template-columns: 1fr; }
     }
+
+
+
+
+    @media (max-width: 600px) {
+          /* Scale base font-size down so rem-based sizes reduce proportionally */
+          html { font-size: 14px; }
+
+          /* Reduce big paddings / margins */
+          header { padding: 2rem 1rem; }
+          section { padding: 2rem 1rem; }
+
+          /* Make hero shorter and headings smaller */
+          .hero { height: 70vh; }
+          .hero h1 { font-size: clamp(1.8rem, 8vw, 2.5rem); }
+          .subtitle { margin-top: 6px; }
+
+          /* Cards and projects: single column, smaller gaps and padding */
+          .projects { grid-template-columns: 1fr; gap: 1rem; }
+          .card { padding: 1rem; border-radius: 12px; }
+          .card h3 { font-size: 1.05rem; }
+          .card p { font-size: 0.9rem; }
+
+          /* Tags and buttons — smaller touch targets visually but keep tap area reasonable */
+          .tags span, .btnbtnbtn, a.button { padding: 0.25rem 0.5rem; font-size: 0.7rem; }
+
+          /* About sections stack and use tighter spacing */
+          .about{ grid-template-columns: 1fr; gap: 0.75rem; }
+          .about div { padding: 1rem; margin-top: 6px; margin-bottom: 6px; }
+
+          .about2 { grid-template-columns: 1fr; gap: 1rem; }
+          .about2 div { padding: 1rem; margin-top: 6px; margin-bottom: 6px; }
+          .about2 table{
+           
+            display: block;
+          }
+
+          .about2 tr {
+            display: block;
+            
+            max-width: 7;
+          }
+
+          /* Smaller gallery thumbnails */
+          .screenshot-gallery img { height: 110px; }
+          .screenshots { min-width: 220px; min-height: 140px; gap: 12px; padding-bottom: 8px; }
+
+          /* Reduce icon and small element sizes */
+          .smallicons { width: 1.4rem; margin-left: 4px; }
+
+          /* Modal images fit well on small screens */
+          .modal img { max-width: 95vw; max-height: 85vh; border-radius: 8px; }
+
+          /* Make absolutely-positioned posts fall into normal flow on small screens */
+          .post { position: static; max-width: 100%; max-height: none; }
+
+          /* Footer and misc text sizing */
+          footer { font-size: 0.85rem; padding: 1.2rem; }
+
+          /* Slightly reduce box-shadows and hover transforms for performance on mobile */
+          .card:hover { transform: translateY(-4px); box-shadow: 0 12px 25px rgba(0,0,0,0.35); }
+
+          /* Ensure horizontal scrolling areas remain usable */
+          .screenshot-gallery, .screenshots { -webkit-overflow-scrolling: touch; }
+        }
